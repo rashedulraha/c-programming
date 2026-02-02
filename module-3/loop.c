@@ -1,6 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
 
-
- int main (){
-  return 0;
- }
+int main() {
+    int i;
+    for (i = 1; i <= 10; i++) {
+        printf("I'm sorry\n");
+    }
+    return 0;
+}
