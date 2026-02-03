@@ -7,11 +7,11 @@ int main(){
   scanf("%d %d", &a, &b);
 
   if(a%b==0){
-    printf("Multiples");
+    printf("Multiples\n");
   }else if (b%a==0){
-printf("multiple");
+printf("Multiples\n");
   }else{
-    printf("No Multiples");
+    printf("No Multiples\n");
   }
 
    
