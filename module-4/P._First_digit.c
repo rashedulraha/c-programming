@@ -10,8 +10,11 @@ int main(){
   
   int firstDigit  = allDigit/1000;
 
-  printf("%d", firstDigit);
-
+   if(firstDigit%2==0){
+     printf("%d", "EVEN");
+   }else{
+      printf("%d", "ODD");
+   }
 
 
   return 0;
