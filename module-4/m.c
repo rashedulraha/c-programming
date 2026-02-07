@@ -1,22 +1,25 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
+int main() {
+    char x;
 
-   char x;
+    scanf(" %c", &x);
 
-   scanf("%c",x);
+    if (x >= '0' && x <= '9') {
+        printf("IS DIGIT\n");
+    }
+    else if ((x >= 'a' && x <= 'z') || (x >= 'A' && x <= 'Z')) {
+        printf("IS ALPHA\n");
 
-    if (x>='0' && x<='9'){
-      printf("IS DIGIT\n");
-    }else{
-      printf("ALPHA\n");
-
-      if (x>='a'&& x<='Z'){
-        printf("IS SMALL\n");
-      }else{
-        printf("IS CAPITAL\n");
-      }
+        if (x >= 'a' && x <= 'z') {
+            printf("IS SMALL\n");
+        } else {
+            printf("IS CAPITAL\n");
+        }
+    }
+    else {
+        printf("SPECIAL CHARACTER\n");
     }
 
-   return 0;
- }
+    return 0;
+}
