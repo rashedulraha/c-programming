@@ -9,7 +9,7 @@ int main(){
   if (ch>='0'&&ch<='9'){
     printf("IS DIGIT");
   }else{
-    printf("ALPHA");
+    printf("ALPHA\n");
     if (ch >='a'&&ch<='z'){
       printf("IS SMALL");
     }else{
