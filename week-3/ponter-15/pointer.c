@@ -10,8 +10,12 @@ int main()
   // int *pointer;
   // pointer = &x;
 
-  int *pointer = &x;
+  int *pointer;
+  pointer = &x;
 
-  printf("%p", pointer);
+  *pointer = 499;
+
+  printf("%p\n", pointer);
+  printf("%d\n", x);
   return 0;
 }
